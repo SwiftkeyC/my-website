@@ -257,7 +257,6 @@ button {
   box-shadow: var(--shadow);
 }
 
-.pill::after,
 .tile::after {
   content: "\2197";
   font-weight: 500;
@@ -490,7 +489,7 @@ button {
   }
 }
 
-/* Footer: the contact links */
+/* Footer: address and phone on the left, icon links on the right */
 
 .footer {
   margin-top: 40px;
@@ -498,30 +497,32 @@ button {
   border-top: 1px solid var(--line);
 }
 
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+}
+
+.footer address {
+  font-size: 0.92rem;
+  font-style: normal;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
 .links {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
   gap: 10px;
 }
 
-.pill {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 52px;
-  padding: 0 18px;
-  border-radius: 18px;
-  font-weight: 700;
-  text-decoration: none;
+.links img {
+  width: 44px;
+  height: 44px;
   transition: transform 0.2s;
 }
 
-.pill:hover {
+.links a:hover img {
   transform: translateY(-3px);
-}
-
-@media (max-width: 640px) {
-  .links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <meta name="description" content="Projects I have built.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="projects">
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-nav"></header>
+
+  <main id="main">
+    <section class="container page-head">
+      <p class="page-no">02</p>
+      <h1 class="display display-md">
+        <span>Projects</span>
+        <span class="display-soft">&amp; experiments</span>
+      </h1>
+      <p class="lead">Filter by topic, search by name, and open any card for the full story.</p>
+    </section>
+
+    <section class="container section">
+      <div class="toolbar">
+        <div class="filters" id="filters" role="group" aria-label="Filter projects by topic"></div>
+        <label class="sr-only" for="search">Search projects</label>
+        <input class="input" id="search" type="search" placeholder="Search projects" autocomplete="off">
+      </div>
+      <p class="count" id="count" role="status" aria-live="polite"></p>
+
+      <div class="project-grid" id="project-grid"></div>
+
+      <div class="panel empty-state" id="empty" hidden>
+        <h2>Nothing matches</h2>
+        <p class="muted">Try a different word or topic.</p>
+        <button class="btn btn-ghost" type="button" id="reset">Show all projects</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title"></dialog>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

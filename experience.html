@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience</title>
+  <meta name="description" content="Work experience, education and achievements.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="experience">
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-nav"></header>
+
+  <main id="main">
+    <section class="container page-head">
+      <p class="page-no">03</p>
+      <h1 class="display display-md">
+        <span>Experience</span>
+        <span class="display-soft">so far</span>
+      </h1>
+      <p class="lead">Pick a track, then open any entry to read the details.</p>
+    </section>
+
+    <section class="container section">
+      <div class="exp-bar">
+        <div class="tabs" id="tabs" role="tablist" aria-label="Timeline"></div>
+        <button class="btn btn-ghost" type="button" id="toggle-all">Expand all</button>
+      </div>
+      <div id="tab-panel" role="tabpanel">
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="panel reveal">
+        <div class="panel-head">
+          <h2 class="eyebrow">Skills</h2>
+        </div>
+        <div class="skill-groups" id="skills"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/experience.js"></script>
+</body>
+</html>

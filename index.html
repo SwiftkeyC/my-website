@@ -3,79 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
-  <meta name="description" content="Personal website: projects and experience.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <script>
-    document.documentElement.classList.add("js");
-    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
+  <title>Nurdaulet Askar</title>
+  <meta name="description" content="Nurdaulet Askar, first-year Computer Science student at the University of York. Projects and experience.">
+  <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="home">
-  <a class="skip" href="#main">Skip to content</a>
-  <header id="site-nav"></header>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Nurdaulet Askar</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+      </nav>
+    </div>
+  </header>
 
-  <main id="main">
+  <main>
     <section class="container hero">
       <div class="hero-text">
-        <p class="page-no">01</p>
-        <p class="greeting" id="greeting">Hello, I'm</p>
-        <h1 class="display">
-          <span id="first-name">Your</span>
-          <span class="display-soft" id="last-name">Name</span>
-        </h1>
-        <p class="lead" id="tagline"></p>
-        <ul class="chips" id="traits"></ul>
-        <div class="hero-actions">
+        <h1 class="name">Nurdaulet <span>Askar</span></h1>
+        <p class="lead">First-year Computer Science student at the University of York.</p>
           <a class="btn btn-primary" href="projects.html">See my projects</a>
-          <button class="btn btn-ghost" type="button" id="copy-email">Copy my email</button>
+          <button class="btn" type="button" id="copy-email" data-email="nurdauletaskar551@gmail.com">Copy my email</button>
         </div>
       </div>
 
-      <div class="hero-card">
-        <figure class="photo">
-          <img id="photo" src="assets/photo-placeholder.svg" alt="" width="400" height="540">
-          <figcaption id="motto"></figcaption>
-          <span class="photo-hint" id="photo-hint">Add your photo as assets/photo.jpg</span>
-        </figure>
-        <ul class="pill-stack" id="quick-links"></ul>
-      </div>
+      <img class="photo" src="assets/photo.jpg" alt="Nurdaulet Askar" width="914" height="1600">
     </section>
 
-    <section class="container section">
-      <h2 class="eyebrow">Explore</h2>
-      <div class="tiles" id="tiles"></div>
-    </section>
-
-    <section class="container section">
-      <div class="panel about reveal">
-        <div class="about-text">
-          <h2 class="eyebrow">About me</h2>
-          <div class="prose" id="about"></div>
-        </div>
-        <dl class="facts" id="facts"></dl>
-      </div>
-    </section>
-
-    <section class="container section">
-      <div class="panel reveal">
-        <div class="panel-head">
-          <h2 class="eyebrow">Tools I work with</h2>
-          <a class="text-link" href="experience.html">Full experience</a>
-        </div>
-        <ul class="tool-grid" id="tools"></ul>
-      </div>
+    <section class="container tiles">
+      <a class="tile bg-forest" href="projects.html">Projects</a>
+      <a class="tile bg-sage" href="experience.html">Experience</a>
     </section>
   </main>
 
-  <footer id="site-footer"></footer>
+  <footer class="footer">
+    <ul class="container links">
+      <li><a class="pill bg-forest" href="mailto:nurdauletaskar551@gmail.com">Email</a></li>
+      <li><a class="pill bg-sage" href="https://github.com/SwiftkeyC" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a class="pill bg-sand" href="https://www.linkedin.com/in/nurdaulet-askar-03350033a/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="pill bg-clay" href="https://testflight.apple.com/join/WFrS8Zqj" target="_blank" rel="noopener">Approx beta</a></li>
+    </ul>
+  </footer>
 
-  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/home.js"></script>
 </body>
 </html>

@@ -3,56 +3,121 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Experience</title>
-  <meta name="description" content="Work experience, education and achievements.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <script>
-    document.documentElement.classList.add("js");
-    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
+  <title>Experience · Nurdaulet Askar</title>
+  <meta name="description" content="Work experience, education and skills of Nurdaulet Askar.">
+  <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="experience">
-  <a class="skip" href="#main">Skip to content</a>
-  <header id="site-nav"></header>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Nurdaulet Askar</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html" aria-current="page">Experience</a>
+      </nav>
+    </div>
+  </header>
 
-  <main id="main">
-    <section class="container page-head">
-      <p class="page-no">03</p>
-      <h1 class="display display-md">
-        <span>Experience</span>
-        <span class="display-soft">so far</span>
-      </h1>
-      <p class="lead">Pick a track, then open any entry to read the details.</p>
-    </section>
+  <main class="container page">
+    <h1>Experience</h1>
 
-    <section class="container section">
-      <div class="exp-bar">
-        <div class="tabs" id="tabs" role="tablist" aria-label="Timeline"></div>
-        <button class="btn btn-ghost" type="button" id="toggle-all">Expand all</button>
-      </div>
-      <div id="tab-panel" role="tabpanel">
-        <ol class="timeline" id="timeline"></ol>
-      </div>
-    </section>
+    <section>
+      <h2>Work</h2>
 
-    <section class="container section">
-      <div class="panel reveal">
-        <div class="panel-head">
-          <h2 class="eyebrow">Skills</h2>
+      <article class="entry">
+        <div class="entry-head">
+          <img class="entry-logo wide" src="assets/umag-logo.svg" alt="UMAG logo" width="120" height="56">
+          <div>
+            <h3>Software Tester Intern</h3>
+            <p class="muted">UMAG, Kazakhstan</p>
+          </div>
+          <p class="when">Summer 2026</p>
         </div>
-        <div class="skill-groups" id="skills"></div>
-      </div>
+        <p>Summer software testing internship, contributing to internal IT projects.</p>
+        <ul class="bullets">
+          <li>Debugged and tested backend APIs using Postman</li>
+          <li>Identified more than 20 UI/UX bugs through systematic testing and documented them in detailed reports in Atlassian Confluence for the software team</li>
+          <li>Performed functional and regression testing to identify backend and frontend issues and verify that fixes worked as expected</li>
+          <li>Collaborated with the development team to reproduce issues, communicate technical findings and improve overall software quality</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <img class="entry-logo" src="assets/york-logo.png" alt="University of York shield" width="56" height="56">
+          <div>
+            <h3>Computer Science, 1st year</h3>
+            <p class="muted">The University of York, UK</p>
+          </div>
+          <p class="when">2026 &mdash; 2029</p>
+        </div>
+        <p>First-year core modules:</p>
+        <div class="modules">
+          <div>
+            <h4>Semester 1, autumn</h4>
+            <ul class="bullets">
+              <li>Software 1: Foundations of Programming for Computer Science</li>
+              <li>Theory 1: Mathematical Foundations of Computer Science</li>
+              <li>Human-Computer Interaction (HCI)</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Semester 2, spring</h4>
+            <ul class="bullets">
+              <li>Software 2: Object-Oriented Data Structures and Algorithms</li>
+              <li>Systems and Devices 1: Introduction to Computer Architectures</li>
+              <li>Theory 2: Formal Languages and Automata</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <img class="entry-logo" src="assets/ngs-logo.png" alt="New Generation School crest" width="56" height="56">
+          <div>
+            <h3>High school graduate</h3>
+            <p class="muted">New Generation School, Kazakhstan</p>
+          </div>
+        </div>
+        <p>Graduated with a GPA of 4.7 out of 5.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+
+      <dl class="entry skills">
+        <dt>Languages</dt>
+        <dd>C++, Python, TypeScript, JavaScript, Go, SQL, Bash, LaTeX</dd>
+        <dt>Frameworks</dt>
+        <dd>React Native, Expo, Django, Django REST Framework, Django Channels</dd>
+        <dt>Technologies</dt>
+        <dd>PostgreSQL, Redis, Docker, Git, GitHub Actions, WebSockets, REST APIs, OAuth authentication</dd>
+        <dt>Cloud and deployment</dt>
+        <dd>Railway, Cloudflare R2, Cloudflare Workers AI (Llama 4), Cloudflare Media Transformations</dd>
+        <dt>Other</dt>
+        <dd>Competitive programming, Linux, load testing (Locust)</dd>
+      </dl>
     </section>
   </main>
 
-  <footer id="site-footer"></footer>
-
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/experience.js"></script>
+  <footer class="footer">
+    <ul class="container links">
+      <li><a class="pill bg-forest" href="mailto:nurdauletaskar551@gmail.com">Email</a></li>
+      <li><a class="pill bg-sage" href="https://github.com/SwiftkeyC" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a class="pill bg-sand" href="https://www.linkedin.com/in/nurdaulet-askar-03350033a/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="pill bg-clay" href="https://testflight.apple.com/join/WFrS8Zqj" target="_blank" rel="noopener">Approx beta</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
